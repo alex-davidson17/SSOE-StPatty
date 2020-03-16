@@ -53,7 +53,7 @@ function animateWheel(duration) {
   TweenMax.to(wheel, 20, {
     ease: Power4.easeOut,
     rotation: rotation,
-    onComplete: guess
+    onComplete: TweenMax.delayedCall(10, guess)
   });
 }
 
